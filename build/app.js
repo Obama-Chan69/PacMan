@@ -53,9 +53,9 @@ class Ghost {
     const pacmanSpeed = pacman.velocityPerMs;
     const levelAdjustment = level / 100;
 
-    this.slowSpeed = pacmanSpeed * (0.75 + levelAdjustment);
-    this.mediumSpeed = pacmanSpeed * (0.875 + levelAdjustment);
-    this.fastSpeed = pacmanSpeed * (1 + levelAdjustment);
+    this.slowSpeed = pacmanSpeed * (0.50 + levelAdjustment);
+    this.mediumSpeed = pacmanSpeed * (0.75 + levelAdjustment);
+    this.fastSpeed = pacmanSpeed * (0.875 + levelAdjustment);
 
     if (!this.defaultSpeed) {
       this.defaultSpeed = this.slowSpeed;
